@@ -8,17 +8,17 @@ export default function AppHeader() {
     <header>
       <img src={heroImg} alt="dcLogo" />
 
-      <nav>
-        <a href="">characters</a>
-        <a href="">comics</a>
-        <a href="">movies</a>
-        <a href="">tv</a>
-        <a href="">games</a>
-        <a href="">collectibles</a>
-        <a href="">videos</a>
-        <a href="">fans</a>
-        <a href="">news</a>
-        <a href="">shop</a>
+      <nav className="navbar">
+        <a href="">CHARACTERS</a>
+        <a href="">COMICS</a>
+        <a href="">MOVIES</a>
+        <a href="">TV</a>
+        <a href="">GAMES</a>
+        <a href="">COLLECTIBLES</a>
+        <a href="">VIDEOS</a>
+        <a href="">FANS</a>
+        <a href="">NEWS</a>
+        <a href="">SHOP</a>
       </nav>
     </header>
   );

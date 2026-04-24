@@ -19,6 +19,17 @@ body {
 header {
   background-color: white;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.navbar a {
+  color: black;
+  text-decoration: none;
 }
 
 main {
@@ -72,4 +83,8 @@ footer {
 
 .followUs {
   color: rgb(5, 130, 249);
+}
+
+.sites p {
+  opacity: 50%;
 }
