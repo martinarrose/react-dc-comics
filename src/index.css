@@ -13,6 +13,7 @@ body {
   display: flex;
   width: 100%;
   flex-direction: column;
+  height: 100vh;
 }
 
 header {
@@ -35,6 +36,8 @@ footer {
 
   .footer2 {
     background-image: url(./assets/dc-comics-1/img/footer-bg.jpg);
+    display: flex;
+    justify-content: space-around;
   }
 
   .footer3 {
@@ -44,11 +47,23 @@ footer {
   .links {
     display: flex;
     gap: 50px;
+    justify-content: center;
   }
 }
 
 .dcComicsEShop {
   display: flex;
-  flex-direction: column;
   gap: 10px;
+  flex-direction: column;
+}
+
+.rotatedLogo {
+  height: 100%;
+  aspect-ratio: 1;
+  transform: rotate(-30deg);
+  filter: opacity(50%);
+}
+
+.tesst {
+  background-color: red;
 }

@@ -1,3 +1,4 @@
+import heroImg from "../assets/dc-comics-1/img/dc-logo.png";
 export default function AppFooter() {
   const dcComicsItems = [
     "Characters",
@@ -36,7 +37,7 @@ export default function AppFooter() {
   return (
     <footer>
       <div className="footer1">
-        <div>DIGITAL COMICS</div>
+        <div> DIGITAL COMICS</div>
         <div></div>
         <div></div>
         <div></div>
@@ -49,7 +50,7 @@ export default function AppFooter() {
             <div className="dcComics">
               <h2>DC COMICS</h2>
               {dcComicsItems.map((item) => {
-                return <p> {item}</p>;
+                return <p className="tesst "> {item}</p>;
               })}
             </div>
 
@@ -73,6 +74,9 @@ export default function AppFooter() {
               return <p>{item}</p>;
             })}
           </div>
+        </div>
+        <div>
+          <img className="rotatedLogo" src={heroImg} alt="dcLogo" />
         </div>
       </div>
 
