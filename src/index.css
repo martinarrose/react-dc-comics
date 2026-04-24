@@ -28,6 +28,7 @@ main {
 }
 
 footer {
+  color: white;
   .footer1 {
     background-color: rgb(5, 130, 249);
   }
@@ -39,4 +40,15 @@ footer {
   .footer3 {
     background-color: rgb(30, 30, 30);
   }
+
+  .links {
+    display: flex;
+    gap: 50px;
+  }
+}
+
+.dcComicsEShop {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }

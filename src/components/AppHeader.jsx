@@ -6,7 +6,7 @@ export default function AppHeader() {
   //your template here
   return (
     <header>
-      <img src={heroImg} alt="" />
+      <img src={heroImg} alt="dcLogo" />
 
       <nav>
         <a href="">characters</a>
