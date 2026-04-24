@@ -7,23 +7,36 @@
 body {
   font-family: "open sans";
   background-color: rgb(251, 251, 227);
-  flex-direction: column;
 }
 
 #root {
   display: flex;
   width: 100%;
+  flex-direction: column;
 }
 
 header {
-  background-color: red;
+  background-color: white;
+  display: flex;
 }
 
 main {
-  background-color: green;
+  background-color: black;
   flex: 1;
+  color: white;
+  display: flex;
 }
 
 footer {
-  background-color: blue;
+  .footer1 {
+    background-color: rgb(5, 130, 249);
+  }
+
+  .footer2 {
+    background-image: url(./assets/dc-comics-1/img/footer-bg.jpg);
+  }
+
+  .footer3 {
+    background-color: rgb(30, 30, 30);
+  }
 }
