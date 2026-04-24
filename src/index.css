@@ -42,6 +42,8 @@ footer {
 
   .footer3 {
     background-color: rgb(30, 30, 30);
+    display: flex;
+    justify-content: space-around;
   }
 
   .links {
@@ -66,4 +68,8 @@ footer {
 
 .tesst {
   background-color: red;
+}
+
+.followUs {
+  color: rgb(5, 130, 249);
 }

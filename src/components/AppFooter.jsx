@@ -1,4 +1,6 @@
+import AFooterSection from "./FooterSection";
 import heroImg from "../assets/dc-comics-1/img/dc-logo.png";
+import FooterSection from "./FooterSection";
 export default function AppFooter() {
   const dcComicsItems = [
     "Characters",
@@ -47,33 +49,11 @@ export default function AppFooter() {
       <div className="footer2">
         <div className="links">
           <div className="dcComicsEShop">
-            <div className="dcComics">
-              <h2>DC COMICS</h2>
-              {dcComicsItems.map((item) => {
-                return <p className="tesst "> {item}</p>;
-              })}
-            </div>
-
-            <div className="shop">
-              <h2> SHOP</h2>
-              {shopItems.map((item) => {
-                return <p> {item}</p>;
-              })}
-            </div>
+            <FooterSection title="DC COMICS" elements={dcComicsItems} />
+            <FooterSection title="SHOP" elements={shopItems} />
           </div>
-
-          <div className="dc">
-            <h2>DC</h2>
-            {dcItems.map((item) => {
-              return <p>{item}</p>;
-            })}
-          </div>
-          <div className="sites">
-            <h2> SITES </h2>
-            {sitesIcons.map((item) => {
-              return <p>{item}</p>;
-            })}
-          </div>
+          <FooterSection title="DC" elements={dcItems} />
+          <FooterSection title="SITES" elements={sitesIcons} />
         </div>
         <div>
           <img className="rotatedLogo" src={heroImg} alt="dcLogo" />
@@ -82,6 +62,9 @@ export default function AppFooter() {
 
       <div className="footer3">
         <button className="button">SIGN-UP NOW!</button>
+        <div className="followUs">
+          <p>Follow Us</p>
+        </div>
       </div>
     </footer>
   );
