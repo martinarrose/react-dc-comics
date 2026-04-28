@@ -18,12 +18,23 @@ export default function AppHeader() {
   //your template here
   return (
     <header>
-      <img className="headerImg" src={heroImg} alt="dcLogo" />
+      <img src={heroImg} alt="dcLogo" />
+
+      {navbarItems.map((item) => {
+        return <a href=""></a>;
+      })}
 
       <nav className="navbar">
-        {navbarItems.map((item) => {
-          return <a href="">{item}</a>;
-        })}
+        <a href="">CHARACTERS</a>
+        <a href="">COMICS</a>
+        <a href="">MOVIES</a>
+        <a href="">TV</a>
+        <a href="">GAMES</a>
+        <a href="">COLLECTIBLES</a>
+        <a href="">VIDEOS</a>
+        <a href="">FANS</a>
+        <a href="">NEWS</a>
+        <a href="">SHOP</a>
       </nav>
     </header>
   );
